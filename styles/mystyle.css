@@ -97,7 +97,48 @@ a.link-arrows{
     font-weight: bold;
 }
 /*secondary-news*/
+.secondary-news{
+    border-right: 5px solid #ffcc00;
+    margin-bottom:30px;
+}
+.img-container{
+    height: 350px;
+    width: 100%;
+    background-image: url(../img/ngm-2211-tut-treasure-dataviz_primary_ai2html-desktop-small.jpg);
+    background-position: center center;
+    background-size: cover;
+}
 .secondary-news img{
     height: 350px;
     width: 100%;
+}
+.secondary-news-text{
+    background-color: white;
+    color:black;
+    margin-top: -3px;
+    padding:30px;
+}
+
+/*todays picks*/
+.todays-picks-item{
+    display: flex;
+}
+.todays-picks-item img{
+    width:100px;
+}
+
+@media(min-width:768px){
+    main{
+        width:80%;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    main .news{
+        width:60%;
+    }
+    main section{
+        width:40%;
+    }
 }
